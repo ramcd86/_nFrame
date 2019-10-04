@@ -1,0 +1,136 @@
+.container--Header {
+
+    &.listing-view {
+        background-image: url('') !important;
+        .nav-container-desktop {
+            color: white;
+            .nav-item {
+                a {
+                    color: white !important;
+                    text-decoration: none;
+                    &:hover {
+                        color: grey !important;
+                    }
+                }
+                &.active {
+                    a {
+                        color: white !important;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+    display: block;
+    width: 100%;
+    z-index: 360;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    min-height: 278px;
+    background-image: url('../../../Static/img/bottom-tear.svg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center -50px;
+    @media only screen and (max-width: 1680px) {
+        background-size: contain;
+        background-position: center 0px;
+    }
+    @include media-breakpoint-down(lg) {
+        background-size: 180%;
+        background-position: center -40px;
+    }
+    @include media-breakpoint-down(md) {
+        background-size: 180%;
+        background-position: center top;
+    }
+    @include media-breakpoint-down(sm) {
+        background-size: 200%;
+        background-position: center top;
+    }
+    padding: {
+        left: 60px;
+        right: 60px;
+        top: 15px;
+    }
+
+    @include media-breakpoint-down(lg) {
+        padding: {
+            left: 30px;
+            right: 30px;
+            top: 15px;
+        }
+    }
+
+    .logo {
+        img {
+            margin-top: 25px;
+            @include media-breakpoint-down(lg) {
+                margin-top: 0px;
+            }
+            @include media-breakpoint-down(sm) {
+                margin-top: 10px;
+                max-with: 60% !important;
+            }
+        }
+        @include media-breakpoint-down(sm) {
+            padding: {
+                left: 15px;
+                right: 60px;
+                top: 0px;
+            }
+        }
+    }
+    @include media-breakpoint-down(sm) {
+        padding: {
+            left: 15px;
+            right: 60px;
+            top: 0px;
+        }
+    }
+    .nav-container-desktop {
+        text-align: right;
+        margin-top: 20px;
+        .burger-menu {
+            cursor: pointer;
+            margin-top: 20px;
+            @include media-breakpoint-down(lg) {
+                margin-top: -5px;
+            }
+        }
+        .nav-item {
+            display: inline-block;
+            margin: {
+                left: 10px;
+                right: 10px;
+            }
+            padding-bottom: 5px;
+            letter-spacing: 0.60px;
+            font-size: 16px;
+            cursor: pointer;
+            text-transform: uppercase;
+            a {
+                color: $emerald;
+                text-decoration: none;
+                &:hover {
+                    color: $ashen;
+                }
+            }
+            &.active {
+                a {
+                    color: $emerald;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+    .nav-container-mobile {
+        display: none;
+    }
+
+    .nav-drop {
+        display: none;
+    }
+
+}

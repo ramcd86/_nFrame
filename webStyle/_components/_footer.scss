@@ -1,0 +1,13 @@
+.container--Footer {
+    padding: {
+        top: 25px;
+        bottom: 25px;
+    }
+    background-color: $slate;
+    h5 {
+        color: $white;
+        text-transform: uppercase;
+        font-size: 20px;
+        font-weight: 700;
+    }
+}
